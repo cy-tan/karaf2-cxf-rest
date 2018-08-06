@@ -143,7 +143,7 @@ public class CustomerService {
                                 Customer customer) {
         LOG.info("Invoking addCustomer, Customer name is: {}", customer.getName());
         customer.setId(++currentId);
-        LOG.info("Invoking addCustomer, Customer id is: {}", currentId);
+        LOG.info("Invoking addCustomer, Customer id is: {}", String.valueOf(currentId));
 
         customers.put(customer.getId(), customer);
         if (jaxrsContext.getHttpHeaders().getMediaType().getSubtype().equals("json")) {

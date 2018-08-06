@@ -48,6 +48,7 @@ public class Customer {
 
     public void setName(String name) {
         this.name = name;
-        this.name = name + "-" + System.getenv().getOrDefault("HOSTNAME", "unknown") + "-" + new java.util.Date();
+        java.util.Random rand = new java.util.Random();
+        this.name = name + "-" + System.getenv().getOrDefault("HOSTNAME", "unknown") + "-" + rand.nextInt(50);
     }
 }

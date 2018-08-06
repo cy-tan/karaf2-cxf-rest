@@ -48,6 +48,6 @@ public class Customer {
 
     public void setName(String name) {
         this.name = name;
-        this.name = name + System.getenv().getOrDefault("HOSTNAME", "unknown");
+        this.name = name + "-" + System.getenv().getOrDefault("HOSTNAME", "unknown") + "-" + new java.util.Date();
     }
 }

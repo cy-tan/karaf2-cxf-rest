@@ -4,15 +4,8 @@
     <mirror>
       <id>Nexus</id>
       <name>Nexus Public Mirror</name>
-      <url>http://nexus3.tcy-nexus.svc.cluster.local:8081/repository/maven-all-public/</url>
+      <url>http://nexus-cicd-demo.apps.demo10447.rht-labs.xyz/repository/maven-all-public/</url>
       <mirrorOf>*</mirrorOf>
     </mirror>
   </mirrors>
-  <servers>
-    <server>
-      <id>nexus</id>
-      <username>admin</username>
-      <password>admin123</password>
-    </server>
-  </servers>
 </settings>

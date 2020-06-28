@@ -8,3 +8,4 @@ The REST service provides a customer service that supports the following operati
 
 * Retrieve the customer instance with id 123
       curl http://quickstart-cxf-rest.f8/cxf/crm/customerservice/customers/123
+* import wadl http://karaf2-cxf-rest-route-my-project.apps.klcity-5d5d.example.opentlc.com/cxf/crm?_wadl
